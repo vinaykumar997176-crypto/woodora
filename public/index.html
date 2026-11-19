@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f4f0e8"><meta name="description" content="Woodora — thoughtful furniture for slower, more beautiful living.">
+  <title>WOODORA — Furniture for living</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="progress" id="progress"></div>
+  <header class="header">
+    <a class="logo" href="#home">woodora<span>®</span></a>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="#collection">Products</a><a href="#categories">Living room</a><a href="#bedroom">Bedroom</a><a href="#dining">Dining</a><a href="#offers">Offers</a>
+    </nav>
+    <div class="head-actions"><button class="search-trigger" id="searchTrigger" aria-label="Search">⌕</button><button class="bag-trigger" id="openCart">Bag <b id="bagCount">0</b></button><button class="hamburger" id="menuTrigger" aria-label="Open menu">☰</button></div>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <video class="hero-video" autoplay muted loop playsinline poster="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1600">
+        <source src="https://videos.pexels.com/video-files/6585759/6585759-hd_1920_1080_25fps.mp4" type="video/mp4">
+      </video>
+      <div class="video-shade"></div><div class="bubble bubble-one"></div><div class="bubble bubble-two"></div><div class="bubble bubble-three"></div>
+      <div class="hero-inner"><p class="eyebrow reveal">THE ART OF SLOW LIVING · COLLECTION 2026</p><h1 class="reveal">Make room<br>for <em>living.</em></h1><p class="hero-desc reveal">Furniture with feeling. Thoughtful pieces for the everyday moments that make a home.</p><a href="#collection" class="btn btn-light reveal">Shop the collection <span>↗</span></a></div>
+      <div class="hero-note"><span>01 — 04</span><span class="scroll-line"></span><span>SCROLL TO EXPLORE</span></div>
+      <div class="hero-side-note">OBJECTS FOR LIVING · EST. 2024</div>
+    </section>
+
+    <section class="ticker" aria-label="Woodora values"><div class="ticker-track"><span>MADE TO BE LIVED IN ✳</span><span>TIMELESS BY DESIGN ✳</span><span>THOUGHTFUL MATERIALS ✳</span><span>MADE TO BE LIVED IN ✳</span><span>TIMELESS BY DESIGN ✳</span><span>THOUGHTFUL MATERIALS ✳</span></div></section>
+
+    <section class="categories section" id="categories">
+      <div class="section-top reveal"><div><p class="eyebrow">A PLACE FOR EVERYTHING</p><h2>Explore by <em>space.</em></h2></div><p class="section-note">Pieces that bring a room together<br>and make it feel like yours.</p></div>
+      <div class="category-grid">
+        <a class="category-tile tile-large reveal" href="#collection" data-jump-category="Sofas"><img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=1200" alt="Sofa in a calm living room"><span class="tile-label">01 / LIVING ROOM <b>↗</b></span><h3>Settle<br>into comfort.</h3></a>
+        <a class="category-tile reveal" href="#collection" data-jump-category="Beds"><img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=900" alt="Soft neutral bedroom"><span class="tile-label">02 / BEDROOM <b>↗</b></span><h3>Rest, <em>well.</em></h3></a>
+        <a class="category-tile reveal" href="#collection" data-jump-category="Tables"><img src="https://images.unsplash.com/photo-1617806118233-18e1de247200?w=900" alt="Wooden dining table"><span class="tile-label">03 / DINING <b>↗</b></span><h3>Gather around.</h3></a>
+      </div>
+      <div class="mini-categories reveal"><button data-category-shortcut="Chairs">Chairs <span>↗</span></button><button data-category-shortcut="Storage">Storage <span>↗</span></button><button data-category-shortcut="Tables">Tables <span>↗</span></button><button data-category-shortcut="all">All furniture <span>↗</span></button></div>
+    </section>
+
+    <section class="shop section" id="collection">
+      <div class="section-top reveal"><div><p class="eyebrow">THE WOODORA COLLECTION</p><h2>Pieces to <em>keep.</em></h2></div><p class="section-note">Designed for now. Made to stay.<br>Find your new favourite.</p></div>
+      <div class="shop-tools reveal"><div class="filters" id="filters"><button class="filter active" data-category="all">All pieces</button><button class="filter" data-category="Sofas">Sofas</button><button class="filter" data-category="Beds">Beds</button><button class="filter" data-category="Tables">Tables</button><button class="filter" data-category="Chairs">Chairs</button><button class="filter" data-category="Storage">Storage</button></div>
+        <div class="sort-wrap"><label for="sortSelect">SORT BY</label><select id="sortSelect"><option value="featured">Featured</option><option value="price-low">Price: low to high</option><option value="price-high">Price: high to low</option><option value="rating">Top rated</option><option value="name">Name A–Z</option></select></div></div>
+      <div class="product-grid" id="productGrid"><p class="loading">Loading the collection…</p></div>
+    </section>
+
+    <section class="offer-banner" id="offers"><div class="offer-copy reveal"><p class="eyebrow">A LITTLE SOMETHING EXTRA</p><h2>Good things<br>come <em>home.</em></h2><p>Discover selected pieces at considered prices. A fresh start for your favourite corner.</p><a class="btn btn-dark" href="#collection" id="offerLink">Explore current offers <span>↗</span></a></div><div class="offer-image reveal"><img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1200" alt="Curated living room furniture"><div class="offer-sticker">THE<br>HOME<br>EDIT <span>✳</span></div></div></section>
+
+    <section class="story section" id="story"><div class="story-image reveal"><img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=1200" alt="Warm interior with natural materials"><span class="image-index">WOODORA STUDIO · 2026</span></div><div class="story-copy reveal"><p class="eyebrow">OUR STORY — A SENSE OF HOME</p><h2>Not just furniture.<br><em>A feeling.</em></h2><p>Woodora began with a simple thought: the things we live with should make everyday life feel better. We look for honest materials, thoughtful shapes and details that reveal themselves over time.</p><p>We believe in rooms that evolve, objects that earn their place and homes that are never really finished. Every piece is chosen to bring a little more warmth, ease and character into your space.</p><a href="#journal" class="under-link">A little more about us <span>↗</span></a></div></section>
+
+    <section class="values section"><p class="eyebrow reveal">THE WOODORA WAY</p><h2 class="reveal">Made with <em>intention.</em></h2><div class="value-grid"><article class="value-card reveal"><span>✳</span><h3>Honest materials</h3><p>Natural textures and lasting finishes, chosen to age beautifully.</p><small>01 / MATERIAL</small></article><article class="value-card reveal"><span>⌁</span><h3>Everyday comfort</h3><p>Good design should look beautiful and feel even better.</p><small>02 / COMFORT</small></article><article class="value-card reveal"><span>↗</span><h3>Made to last</h3><p>Timeless silhouettes over trends that come and go.</p><small>03 / CRAFT</small></article></div></section>
+
+    <section class="journal section" id="journal"><div class="section-top reveal"><div><p class="eyebrow">NOTES FROM HOME</p><h2>The <em>journal.</em></h2></div><p class="section-note">Ideas, inspiration and little ways<br>to make a space your own.</p></div><div class="journal-grid">
+      <article class="journal-card reveal"><a href="#newsletter"><div class="journal-image"><img src="https://images.unsplash.com/photo-1616486029423-aaa4789e8c9a?w=1000" alt="Natural textures and home decor"></div><p class="journal-meta">LIVING WELL · 5 MIN READ</p><h3>Creating a home that feels like you</h3><a class="read-link" href="#newsletter">Read the story ↗</a></article>
+      <article class="journal-card reveal"><a href="#newsletter"><div class="journal-image"><img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=1000" alt="Minimal dining room styling"></div><p class="journal-meta">THE DETAILS · 4 MIN READ</p><h3>The quiet beauty of natural materials</h3><a class="read-link" href="#newsletter">Read the story ↗</a></article>
+      <article class="journal-card reveal"><a href="#newsletter"><div class="journal-image"><img src="https://images.unsplash.com/photo-1615874694520-474822394e73?w=1000" alt="Calm bedroom with layered textiles"></div><p class="journal-meta">ROOM NOTES · 3 MIN READ</p><h3>Small changes, softer mornings</h3><a class="read-link" href="#newsletter">Read the story ↗</a></article>
+    </div></section>
+
+    <section class="newsletter section" id="newsletter"><div class="newsletter-orb"></div><div class="newsletter-copy reveal"><p class="eyebrow">A LETTER FROM WOODORA</p><h2>A little more<br><em>inspiration.</em></h2><p>New arrivals, thoughtful spaces and notes on living well. In your inbox, occasionally.</p></div><form class="newsletter-form reveal" id="newsletterForm"><label for="newsletterEmail">YOUR EMAIL ADDRESS</label><div class="email-row"><input id="newsletterEmail" type="email" placeholder="you@example.com" required><button type="submit" aria-label="Subscribe">↗</button></div><small>By subscribing, you agree to receive occasional Woodora updates.</small></form></section>
+
+    <section class="contact section" id="contact"><div class="contact-inner reveal"><p class="eyebrow">LET'S TALK ABOUT HOME</p><h2>Need a hand<br>choosing <em>your piece?</em></h2><p>Our team would love to help you find the right fit for your space.</p><a class="btn btn-dark" href="mailto:hello@woodora.example">Get in touch <span>↗</span></a></div></section>
+  </main>
+
+  <footer class="footer"><a class="logo footer-logo" href="#home">woodora<span>®</span></a><p>Objects for living. Made for keeping.</p><div class="footer-columns"><div><b>EXPLORE</b><a href="#collection">All furniture</a><a href="#categories">Categories</a><a href="#offers">Offers</a></div><div><b>WOODORA</b><a href="#story">Our story</a><a href="#journal">Journal</a><a href="#contact">Contact</a></div><div><b>HELP</b><a href="mailto:hello@woodora.example">Customer support</a><a href="#newsletter">Newsletter</a></div></div><div class="footer-bottom"><span>© 2026 WOODORA STUDIO</span><span>MADE WITH INTENTION ✳</span><span>DEMO STORE · USD</span></div></footer>
+
+  <div class="overlay" id="overlay"></div>
+  <aside class="drawer" id="cartDrawer" aria-hidden="true"><div class="drawer-head"><div><p class="eyebrow">YOUR SELECTION</p><h2>Your bag <small id="drawerCount">(0)</small></h2></div><button class="close" data-close aria-label="Close bag">×</button></div><div class="cart-items" id="cartItems"><p class="empty">Your bag is waiting for something lovely.</p></div><div class="cart-bottom"><div><span>Subtotal</span><b id="cartTotal">$0</b></div><p>Shipping and taxes calculated at checkout.</p><button class="btn btn-dark checkout" id="checkout">Continue to checkout ↗</button><small>Demo checkout only — no payment is collected.</small></div></aside>
+  <aside class="drawer mobile-drawer" id="mobileDrawer" aria-hidden="true"><button class="close" data-close aria-label="Close menu">×</button><p class="eyebrow">EXPLORE WOODORA</p><a href="#collection">Products ↗</a><a href="#categories">Categories ↗</a><a href="#story">Our story ↗</a><a href="#journal">Journal ↗</a><a href="#offers">Offers ↗</a></aside>
+  <div class="search-modal" id="searchModal"><button class="close-search" id="closeSearch" aria-label="Close search">×</button><label for="searchInput">SEARCH THE COLLECTION</label><input id="searchInput" type="search" placeholder="Try sofa, oak, chair…"><p>Find a piece that feels like home.</p></div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="/app.js"></script>
+</body></html>
